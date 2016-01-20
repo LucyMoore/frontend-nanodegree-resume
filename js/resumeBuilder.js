@@ -6,7 +6,7 @@ var bio = {
     role: "Web/Software Developer",
     welcomeMsg: "Hello All! Welcome to my resume",
     skills: ["Java", "HTML5", "javaScript", "UML", "SQL", "CSS"],
-    image: 'image/fry.jpg',
+    image: "img src = 'http://www.urbanfarmonline.com/images/rabbit-keeping/rabbit-stats_490.jpg'",
     contact: { 
       "phone": "0272741511",
       "email": "lucyviolet.moore@gmail.com",
@@ -34,8 +34,9 @@ bio.displayBio = function() {
     $("#topContacts").append(formattedGit)
     var formattedLocation = HTMLlocation.replace("%data%",bio.contact.location)  
     $("#topContacts").append(formattedLocation)
+    //display image
     var formattedImage = HTMLbioPic.replace("%data%",bio.image)
-    $("#topContacts").append(formattedImage)
+    $("#header").append(formattedImage)
 
   // contact details at the bottom of the page:
     var formattedPhone = HTMLmobile.replace("%data%",bio.contact.phone)  
@@ -108,34 +109,35 @@ work.displayWork();
 
 // object holding all study information
 var education = {
-    schools: [
-  {
-           name: "Computer Power Plus",
-           years: "2012",
-           schoolCity: "wellington",
-           qualification: "Diploma in Software Development (Java)"
-  },
-  {
+    schools: 
+      [
+        {
+          name: "Computer Power Plus",
+          years: "2012",
+          schoolCity: "wellington",
+          qualification: "Diploma in Software Development (Java)"
+        },
+        {
           name: "Natcol Design Technology",
           years: "2008",
           schoolCity: "Wellington",
           qualification: "Diploma in Video Post Production",
-  },
-  {
+        },
+        {
           name: "Natcol Design Technology",
           years: "2007",
           schoolCity: "Wellington",
           qualification: "Diploma in Multi Media",
-  }
-    ],
-  
-    onlineCourses: [
-    {
-      title: "blank",    
-      school:  "blank",
-      dates: "blank"
-  }   
-  ]
+        }
+      ],
+    
+      onlineCourses: [
+      {
+        title: "blank",    
+        school:  "blank",
+        dates: "blank"
+      }   
+    ]
   };
 
  education.displayEdu = function(){
@@ -156,12 +158,13 @@ var education = {
           $(".education-entry:last").append(formattedQualification)
     
     }
-};
-
+ };
+// calling display education function 
 education.displayEdu(); 
 
 //display the internationalize button
 $("#main").append(internationalizeButton)
 
 //display a google map
+
 $("mapDiv").append(googleMap)
