@@ -1,0 +1,87 @@
+var bio = {
+    name: "Lucy",
+    role: "web developer",
+    welcomeMsg: "Hello All! Welcome to my resume",
+    skills: ["Java", "HTML5", "javaScript", "UML", "SQL", "CSS"],
+    contact: { 
+      "phone": "0272741511",
+      "email": "lucyviolet.moore@gmail.com",
+      "skype": "lucyviolet1",
+      "location": "Wellington, New Zealand",
+      "github": "lucyMoore"
+      },
+  };
+ 
+if(bio.skills.length > 0){
+	$("#header").append(HTMLskillsStart);
+	
+	}
+	
+
+};
+
+  var work = {
+  job: [
+	{
+	  employer: "Fujitsu New Zealand",
+	  dates: "2015-2016",
+	  title: "Hotstaging Technician (secondment)",
+	  location: "Wellington",
+	  description: "repairing desktops and laptops, installing operation systems, delivering equipment"
+	},
+	{
+	  employer: "Fujitsu New Zealand",
+	  dates: "2014-2015",
+	  title: "Project Coordinator (secondment)",
+	  location: "Wellington",
+	  description: ""
+	} 
+	{
+	  employer: "Fujitsu New Zealand",
+	  dates: "2012-2014",
+	  title: "Service Desk Analyst",
+	  location: "Wellington",
+	  description: ""
+	} 
+   ]
+  };
+     
+  var education = {
+    schools: [
+	{
+           name: "Computer Power Plus",
+           years: "2012",
+           schoolCity: "wellington"
+	   qualification: "Diploma in Software Development (Java)
+	},
+	{
+           name: "Natcol Design Technology",
+           years: "2007 - 2008",
+           schoolCity: "Wellington",
+	   qualification: "Diploma in Video Post Production",
+	},
+	{
+           name: "Natcol Design Technology",
+           years: "2007 - 2008",
+           schoolCity: "Wellington",
+	   qualification: "Diploma in Multi Media",
+	}
+    ],
+    onlineCourses: [
+    	title: "",
+	school: "",
+	dates: "",
+    ]
+  };
+
+var projects = {
+   [
+	{
+		title: "",
+		dates: "",
+		description"",
+		"images": []
+	}
+};
+
+
